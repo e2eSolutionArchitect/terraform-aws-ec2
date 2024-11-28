@@ -17,5 +17,5 @@ module "main" {
   key_name                    = each.value.key_name
   iam_instance_profile        = each.value.iam_instance_profile
   disable_api_termination     = each.value.disable_api_termination
-  global                      = var.global
+  tags                      = local.tags
 }

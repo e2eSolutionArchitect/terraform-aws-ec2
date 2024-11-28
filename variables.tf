@@ -20,6 +20,11 @@ variable "global" {
   }
 }
 
+variable "tags" {
+  description = "global config"
+  type        = map(any)
+}
+
 # variable "aws_region" {
 #   description = "AWS infrastructure"
 #   type        = string
