@@ -43,15 +43,3 @@ ec2:
   associate_public_ip_address: true
   subnet_id: "subnet-04425d86ed5464997"
   disable_api_termination: false
-
-tags:
-- project      : "project-name"
-  workloadname : "workloadname"
-  desc         : "desc"
-  createdby    : "system"
-  orgunit      : "OU001"
-  businessunit : "BU001"
-  costcenter   : "CC001"
-  environment  : "dev"
-  owner        : "owner@domain.com"
-  supportcentre  : "support@domain.com"
