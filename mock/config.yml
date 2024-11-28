@@ -1,0 +1,29 @@
+# Amazon EC2
+# ------------------------------------------------------------ #
+
+ec2:
+# EC2
+# ------------------------------------------------------------ #
+- name: demovm01
+  aws_region: "us-east-1"
+  availability_zone: "us-east-1a"
+  vpc_security_group_ids: ["sg-092d4a3676b19fec9"]
+  instance_type: "t3.micro"
+  key_name: "e2esa-kp-us-east-1"
+  ami: "ami-05b1a50d6798f63cb"
+  iam_instance_profile:
+  associate_public_ip_address: true
+  subnet_id: "subnet-01776aa96fdd4e89e"
+  disable_api_termination: false
+  
+- name: demovm02
+  aws_region: "us-east-1"
+  availability_zone: "us-east-1b"
+  vpc_security_group_ids: ["sg-092d4a3676b19fec9"]
+  instance_type: "t3.micro"
+  key_name: "e2esa-kp-us-east-1"
+  ami: "ami-05b1a50d6798f63cb"
+  iam_instance_profile:
+  associate_public_ip_address: true
+  subnet_id: "subnet-04425d86ed5464997"
+  disable_api_termination: false
